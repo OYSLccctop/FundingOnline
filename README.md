@@ -7,4 +7,4 @@ B站学习地址：https://www.bilibili.com/video/BV1bE411T7oZ?p=1
 1.后台管理系统是基于SSM整合的单一架构  
 2.前台会员系统是基于SpringBoot+SpringCloud的微服务架构  
 # 代码介绍
-本项目由IDEA工具搭建完成。还原了99%的视频代码，为使用IDEA开发的朋友提供一个架构模型。
+本项目由IDEA工具搭建完成。还原修改视频代码，使用IDEA能正常运行，同时为使用IDEA开发的朋友提供一个架构模型。
