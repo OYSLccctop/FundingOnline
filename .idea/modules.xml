@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding01-admin-parent.iml" filepath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding01-admin-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/atcrowdfunding02-admin-webui.iml" filepath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/atcrowdfunding02-admin-webui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding03-admin-component/atcrowdfunding03-admin-component.iml" filepath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding03-admin-component/atcrowdfunding03-admin-component.iml" />
+      <module fileurl="file://$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding04-admin-entity/atcrowdfunding04-admin-entity.iml" filepath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding04-admin-entity/atcrowdfunding04-admin-entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/atcrowdfunding05commonutils/atcrowdfunding05-common-utils.iml" filepath="$PROJECT_DIR$/atcrowdfunding05commonutils/atcrowdfunding05-common-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/atcrowdfunding06commonreverses/atcrowdfunding06-common-reverses.iml" filepath="$PROJECT_DIR$/atcrowdfunding06commonreverses/atcrowdfunding06-common-reverses.iml" />
+      <module fileurl="file://$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding07-member-parent.iml" filepath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding07-member-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding08-member-eureka/atcrowdfunding08-member-eureka.iml" filepath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding08-member-eureka/atcrowdfunding08-member-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding09-member-entity/atcrowdfunding09-member-entity.iml" filepath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding09-member-entity/atcrowdfunding09-member-entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/atcrowdfunding10-member-mysql-provider.iml" filepath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/atcrowdfunding10-member-mysql-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding11-member-redisserver-provider/atcrowdfunding11-member-redisserver-provider.iml" filepath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding11-member-redisserver-provider/atcrowdfunding11-member-redisserver-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/atcrowdfunding12-member-authenticationserver-consumer.iml" filepath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/atcrowdfunding12-member-authenticationserver-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding13-member-projectServer-consumer/atcrowdfunding13-member-projectServer-consumer.iml" filepath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding13-member-projectServer-consumer/atcrowdfunding13-member-projectServer-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding14-member-order-consumer/atcrowdfunding14-member-order-consumer.iml" filepath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding14-member-order-consumer/atcrowdfunding14-member-order-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding15-member-payServer-consumer/atcrowdfunding15-member-payServer-consumer.iml" filepath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding15-member-payServer-consumer/atcrowdfunding15-member-payServer-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding16-member-zuulserver/atcrowdfunding16-member-zuulserver.iml" filepath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding16-member-zuulserver/atcrowdfunding16-member-zuulserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding17-member-api/atcrowdfunding17-member-api.iml" filepath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding17-member-api/atcrowdfunding17-member-api.iml" />
+    </modules>
+  </component>
+</project>

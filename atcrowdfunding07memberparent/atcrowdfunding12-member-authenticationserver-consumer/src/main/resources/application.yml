@@ -1,0 +1,30 @@
+server:
+  port: 4000
+spring:
+  application:
+    name: ccctop-crowd-auth
+  thymeleaf:
+    check-template-location: true
+    prefix: classpath:/templates/
+    suffix: .html
+  redis:
+    host: 127.0.0.1
+    password: root
+  session:
+    store-type: redis
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka
+short:
+  messages:
+    appcode: 6c50d21fcb734ea5a5f2ce1453a0f59d
+    host: https://feginesms.market.alicloudapi.com
+    method: GET
+    path: /codeNotice
+    sign: 1
+    skin: 1
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
+

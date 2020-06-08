@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.glassfish:javax.servlet:3.0-b70">
+    <CLASSES>
+      <root url="jar://D:/jar/maven-jar/org/glassfish/javax.servlet/3.0-b70/javax.servlet-3.0-b70.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/jar/maven-jar/org/glassfish/javax.servlet/3.0-b70/javax.servlet-3.0-b70-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/jar/maven-jar/org/glassfish/javax.servlet/3.0-b70/javax.servlet-3.0-b70-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

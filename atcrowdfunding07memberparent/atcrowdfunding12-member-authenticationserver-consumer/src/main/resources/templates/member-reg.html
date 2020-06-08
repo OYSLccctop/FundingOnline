@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keys" content="">
+    <meta name="author" content="">
+    <base th:href="@{/}">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script type="text/javascript" src="jquery/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="layer/layer.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#sendBtn").click(function () {
+                // 1.获取接收短信的手机号
+                var phoneNum = $("[name=phoneNum]").val();
+                // 2.发送请求
+                $.ajax({
+                    "url": "auth/member/send/short/message.json",
+                    "type": "post",
+                    "data": {
+                        "phoneNum": phoneNum
+                    },
+                    "dataType": "json",
+                    "success": function (response) {
+                        var result = response.result;
+                        if (result == "SUCCESS"){
+                            layer.msg("发送成功")
+                        }
+                        if (result == "FAILED"){
+                            layer.msg("发送失败！请再试一次！")
+                        }
+                    },
+                    "error": function (response) {
+                        layer.msg(response.status + " " + response.statusText)
+                    },
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <div><a class="navbar-brand" href="index.html" style="font-size:32px;">尚筹网-创意产品众筹平台</a></div>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+
+    <form action="/auth/do/member/register" method="post" class="form-signin" role="form">
+        <h2 class="form-signin-heading"><i class="glyphicon glyphicon-log-in"></i> 用户注册</h2>
+        <p th:text="${message}">显示从请求域取出的提示消息</p>
+        <div class="form-group has-success has-feedback">
+            <input type="text" name="loginacct" class="form-control" id="inputSuccess1" placeholder="请输入登录账号" autofocus>
+            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+        </div>
+        <div class="form-group has-success has-feedback">
+            <input type="text" name="userpswd" class="form-control" id="inputSuccess2" placeholder="请输入登录密码" style="margin-top:10px;">
+            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+        </div>
+        <div class="form-group has-success has-feedback">
+            <input type="text" name="username" class="form-control" id="inputSuccess3" placeholder="请输入用户名称" style="margin-top:10px;">
+            <span class="glyphicon glyphicon glyphicon-envelope form-control-feedback"></span>
+        </div>
+        <div class="form-group has-success has-feedback">
+            <input type="text" name="email" class="form-control" id="inputSuccess4" placeholder="请输入邮箱地址" style="margin-top:10px;">
+            <span class="glyphicon glyphicon glyphicon-envelope form-control-feedback"></span>
+        </div>
+        <div class="form-group has-success has-feedback">
+            <input name="phoneNum" type="text" class="form-control" id="inputSuccess5" placeholder="请输入手机号"
+                   style="margin-top:10px;">
+            <span class="glyphicon glyphicon glyphicon-earphone form-control-feedback"></span>
+        </div>
+        <div class="form-group has-success has-feedback">
+            <input type="text" name="code" class="form-control" id="inputSuccess6" placeholder="请输入验证码" style="margin-top:10px;">
+            <span class="glyphicon glyphicon glyphicon-comment form-control-feedback"></span>
+        </div>
+        <button type="button" id="sendBtn" class="btn btn-lg btn-success btn-block"> 获取验证码</button>
+        <button type="submit" class="btn btn-lg btn-success btn-block">注册</button>
+    </form>
+</div>
+
+</body>
+</html>

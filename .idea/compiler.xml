@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="atcrowdfunding15-member-payServer-consumer" />
+        <module name="atcrowdfunding13-member-projectServer-consumer" />
+        <module name="atcrowdfunding14-member-order-consumer" />
+        <module name="atcrowdfunding02-admin-webui" />
+        <module name="atcrowdfunding09-member-entity" />
+        <module name="atcrowdfunding17-member-api" />
+        <module name="atcrowdfunding08-member-eureka" />
+        <module name="atcrowdfunding16-member-zuulserver" />
+        <module name="atcrowdfunding11-member-redisserver-provider" />
+        <module name="atcrowdfunding06-common-reverses" />
+        <module name="atcrowdfunding03-admin-component" />
+        <module name="atcrowdfunding10-member-mysql-provider" />
+        <module name="atcrowdfunding12-member-authenticationserver-consumer" />
+        <module name="atcrowdfunding05-common-utils" />
+        <module name="atcrowdfunding04-admin-entity" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="atcrowdfunding01-admin-parent" target="1.8" />
+      <module name="atcrowdfunding02-admin-webui" target="1.8" />
+      <module name="atcrowdfunding03-admin-component" target="1.8" />
+      <module name="atcrowdfunding04-admin-entity" target="1.8" />
+      <module name="atcrowdfunding05-common-util" target="1.8" />
+      <module name="atcrowdfunding05-common-utils" target="1.8" />
+      <module name="atcrowdfunding06-common-reverse" target="1.8" />
+      <module name="atcrowdfunding06-common-reverses" target="1.8" />
+      <module name="atcrowdfunding07-member-parent" target="1.8" />
+      <module name="atcrowdfunding08-member-eureka" target="1.8" />
+      <module name="atcrowdfunding09-member-entity" target="1.8" />
+      <module name="atcrowdfunding10-member-mysql-provider" target="1.8" />
+      <module name="atcrowdfunding11-member-redisserver-provider" target="1.8" />
+      <module name="atcrowdfunding12-member-authenticationserver-consumer" target="1.8" />
+      <module name="atcrowdfunding13-member-projectServer-consumer" target="1.8" />
+      <module name="atcrowdfunding14-member-order-consumer" target="1.8" />
+      <module name="atcrowdfunding15-member-payServer-consumer" target="1.8" />
+      <module name="atcrowdfunding16-member-zuulserver" target="1.8" />
+      <module name="atcrowdfunding17-member-api" target="1.8" />
+      <module name="maven-archiver" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="atcrowdfunding08-member-eureka" options="-parameters" />
+      <module name="atcrowdfunding09-member-entity" options="-parameters" />
+      <module name="atcrowdfunding10-member-mysql-provider" options="-parameters" />
+      <module name="atcrowdfunding11-member-redisserver-provider" options="-parameters" />
+      <module name="atcrowdfunding12-member-authenticationserver-consumer" options="-parameters" />
+      <module name="atcrowdfunding13-member-projectServer-consumer" options="-parameters" />
+      <module name="atcrowdfunding14-member-order-consumer" options="-parameters" />
+      <module name="atcrowdfunding15-member-payServer-consumer" options="-parameters" />
+      <module name="atcrowdfunding16-member-zuulserver" options="-parameters" />
+      <module name="atcrowdfunding17-member-api" options="-parameters" />
+    </option>
+  </component>
+</project>

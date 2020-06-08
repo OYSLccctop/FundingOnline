@@ -1,0 +1,23 @@
+server:
+  port: 7000
+spring:
+  application:
+    name: ccctop-crowd-order
+  thymeleaf:
+    check-template-location: true
+    prefix: classpath:/templates/
+    suffix: .html
+  redis:
+    host: localhost
+    password: root
+  session:
+    store-type: redis
+  main:
+    allow-bean-definition-overriding: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka
+ribbon:
+  ReadTimeout: 60000
+  ConnectTimeout: 60000

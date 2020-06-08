@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="stylesheet" th:href="@{/bootstrap/css/bootstrap.min.css}"
+          href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" th:href="@{/css/font-awesome.min.css}"
+          href="css/font-awesome.min.css">
+    <link rel="stylesheet" th:href="@{/css/theme.css}" href="css/theme.css">
+    <style>
+        #footer {
+            padding: 15px 0;
+            background: #fff;
+            border-top: 1px solid #ddd;
+            text-align: center;
+        }
+
+        #topcontrol {
+            color: #fff;
+            z-index: 99;
+            width: 30px;
+            height: 30px;
+            font-size: 20px;
+            background: #222;
+            position: relative;
+            right: 14px !important;
+            bottom: 11px !important;
+            border-radius: 3px !important;
+        }
+
+        #topcontrol:after {
+            /*top: -2px;*/
+            left: 8.5px;
+            content: "\f106";
+            position: absolute;
+            text-align: center;
+            font-family: FontAwesome;
+        }
+
+        #topcontrol:hover {
+            color: #fff;
+            background: #18ba9b;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .label-type, .label-status, .label-order {
+            background-color: #fff;
+            color: #f60;
+            padding: 5px;
+            border: 1px #f60 solid;
+        }
+
+        #typeList :not (:first-child ) {
+            margin-top: 20px;
+        }
+
+        .label-txt {
+            margin: 10px 10px;
+            border: 1px solid #ddd;
+            padding: 4px;
+            font-size: 14px;
+        }
+
+        .panel {
+            border-radius: 0;
+        }
+
+        .progress-bar-default {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar-wrapper">
+    <div class="container">
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html" style="font-size: 32px;">尚筹网-创意产品众筹平台</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse"
+                     style="float: right;">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown"><a href="#" class="dropdown-toggle"
+                                                data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i>
+                            [[${session.loginMember.username}]]<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="member.html"><i
+                                        class="glyphicon glyphicon-scale"></i> 会员中心</a></li>
+                                <li><a href="#"><i class="glyphicon glyphicon-comment"></i>
+                                    消息</a></li>
+                                <li class="divider"></li>
+                                <li><a th:href="@{/auth/member/logout}"><i
+                                        class="glyphicon glyphicon-off"></i> 退出系统</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<div class="container theme-showcase" role="main">
+
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="collapse navbar-collapse"
+                         id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a rel="nofollow" href="index.html"><i
+                                    class="glyphicon glyphicon-home"></i> 众筹首页</a></li>
+                            <li><a rel="nofollow" href="projects.html"><i
+                                    class="glyphicon glyphicon-th-large"></i> 项目总览</a></li>
+                            <li class="active"><a rel="nofollow" href="javascript:;"><i
+                                    class="glyphicon glyphicon-edit"></i> 发起项目</a></li>
+                            <li><a rel="nofollow" href="minecrowdfunding.html"><i
+                                    class="glyphicon glyphicon-user"></i> 我的众筹</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="text-align: center;">
+                        <div class="container-fluid">
+                            <div class="row clearfix">
+                                <div class="col-md-3 column">
+                                    <div class="progress"
+                                         style="height: 50px; border-radius: 0; position: absolute; width: 75%; right: 49px;">
+                                        <div class="progress-bar progress-bar-default"
+                                             role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                                             aria-valuemax="100" style="width: 100%; height: 50px;">
+                                            <div style="font-size: 16px; margin-top: 15px;">1.
+                                                项目及发起人信息
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                            style="right: 0; border: 10px solid #ddd; border-left-color: #88b7d5; border-width: 25px; position: absolute; border-left-color: rgba(221, 221, 221, 1); border-top-color: rgba(221, 221, 221, 0); border-bottom-color: rgba(221, 221, 221, 0); border-right-color: rgba(221, 221, 221, 0);">
+                                    </div>
+                                </div>
+                                <div class="col-md-3 column">
+                                    <div class="progress"
+                                         style="height: 50px; border-radius: 0; position: absolute; width: 75%; right: 49px;">
+                                        <div class="progress-bar progress-bar-success"
+                                             role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                                             aria-valuemax="100" style="width: 100%; height: 50px;">
+                                            <div style="font-size: 16px; margin-top: 15px;">2.
+                                                回报设置
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                            style="right: 0; border: 10px solid #ddd; border-left-color: #88b7d5; border-width: 25px; position: absolute; border-left-color: rgba(92, 184, 92, 1); border-top-color: rgba(92, 184, 92, 0); border-bottom-color: rgba(92, 184, 92, 0); border-right-color: rgba(92, 184, 92, 0);">
+                                    </div>
+                                </div>
+                                <div class="col-md-3 column">
+                                    <div class="progress"
+                                         style="height: 50px; border-radius: 0; position: absolute; width: 75%; right: 49px;">
+                                        <div class="progress-bar progress-bar-default"
+                                             role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                                             aria-valuemax="100" style="width: 100%; height: 50px;">
+                                            <div style="font-size: 16px; margin-top: 15px;">3.
+                                                确认信息
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                            style="right: 0; border: 10px solid #ddd; border-left-color: #88b7d5; border-width: 25px; position: absolute; border-left-color: rgba(221, 221, 221, 1); border-top-color: rgba(221, 221, 221, 0); border-bottom-color: rgba(221, 221, 221, 0); border-right-color: rgba(221, 221, 221, 0);">
+                                    </div>
+                                </div>
+                                <div class="col-md-3 column">
+                                    <div class="progress" style="height: 50px; border-radius: 0;">
+                                        <div class="progress-bar progress-bar-default"
+                                             role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                                             aria-valuemax="100" style="width: 100%; height: 50px;">
+                                            <div style="font-size: 16px; margin-top: 15px;">4. 完成</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+
+                        <div class="container-fluid">
+                            <div class="row clearfix">
+                                <div class="col-md-12 column">
+                                    <blockquote
+                                            style="border-left: 5px solid #f60; color: #f60; padding: 0 0 0 20px;">
+                                        <b> 回报设置 </b>
+                                    </blockquote>
+                                </div>
+                                <div class="col-md-12 column">
+                                    <table class="table table-bordered"
+                                           style="text-align: center;">
+                                        <thead>
+                                        <tr style="background-color: #ddd;">
+                                            <td>序号</td>
+                                            <td>支付金额</td>
+                                            <td>名额</td>
+                                            <td>单笔限购</td>
+                                            <td>回报内容</td>
+                                            <td>回报时间</td>
+                                            <td>运费</td>
+                                            <td>操作</td>
+                                        </tr>
+                                        </thead>
+                                        <tbody id="returnTableBody">
+                                        <!-- <tr>
+                                            <td scope="row">1</td>
+                                            <td>￥1.00</td>
+                                            <td>无限制</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>项目结束后的30天</td>
+                                            <td>包邮</td>
+                                            <td>
+                                                <button type="button" class="btn btn-primary btn-xs">
+                                                    <i class=" glyphicon glyphicon-pencil"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-danger btn-xs">
+                                                    <i class=" glyphicon glyphicon-remove"></i>
+                                                </button>
+                                            </td>
+                                        </tr> -->
+                                        </tbody>
+                                    </table>
+                                    <button id="addReturnBtn" type="button" class="btn btn-primary btn-lg">
+                                        <i class="glyphicon glyphicon-plus"></i> 添加回报
+                                    </button>
+                                    <div class="returnFormDiv"
+                                         style="border: 10px solid #f60; border-bottom-color: #eceeef; border-width: 10px; width: 20px; margin-left: 20px; border-left-color: rgba(221, 221, 221, 0); border-top-color: rgba(221, 221, 221, 0); border-right-color: rgba(221, 221, 221, 0);"></div>
+                                    <div class="panel panel-default returnFormDiv"
+                                         style="border-style: dashed; background-color: #eceeef">
+                                        <div class="panel-body">
+
+                                            <div class="col-md-12 column">
+                                                <form class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <label for="inputEmail3"
+                                                               class="col-sm-2 control-label">回报类型</label>
+                                                        <div class="col-sm-10">
+                                                            <label class="radio-inline"> <input type="radio"
+                                                                                                name="type"
+                                                                                                id="inlineRadio1"
+                                                                                                value="0"> 实物回报
+                                                            </label> <label class="radio-inline"> <input
+                                                                type="radio" name="type"
+                                                                id="inlineRadio2" value="1"> 虚拟物品回报
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-2 control-label">支持金额（元）</label>
+                                                        <div class="col-sm-10">
+                                                            <input type="text" name="supportmoney" value="10"
+                                                                   class="form-control"
+                                                                   style="width: 100px;">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-2 control-label">回报内容</label>
+                                                        <div class="col-sm-10">
+																<textarea class="form-control" name="content" rows="5"
+                                                                          placeholder="简单描述回报内容，不超过200字">以身相许</textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-2 control-label">说明图片</label>
+                                                        <div class="col-sm-10">
+                                                            <input type="file" name="returnPicture"
+                                                                   style="display: none;"/>
+                                                            <button type="button" id="uploadBtn"
+                                                                    class="btn btn-primary btn-lg active">上传图片
+                                                            </button>
+                                                            <label class="control-label">支持jpg、jpeg、png、gif格式，大小不超过2M，建议尺寸：760*510px选择文件</label>
+                                                            <br/>
+                                                            <img style="display: none"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-2 control-label">回报数量（名）</label>
+                                                        <div class="col-sm-10">
+                                                            <input type="text" name="count" value="5"
+                                                                   class="form-control"
+                                                                   style="width: 100px; display: inline"> <label
+                                                                class="control-label">“0”为不限回报数量</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="inputEmail3"
+                                                               class="col-sm-2 control-label">单笔限购</label>
+                                                        <div class="col-sm-10">
+                                                            <label class="radio-inline"> <input type="radio"
+                                                                                                name="signalpurchase"
+                                                                                                id="inlineRadio3"
+                                                                                                value="0"> 不限购
+                                                            </label> <label class="radio-inline"> <input
+                                                                type="radio" name="signalpurchase"
+                                                                id="inlineRadio4" value="1"> 限购
+                                                        </label> <input type="text" name="purchase" value="8"
+                                                                        class="form-control"
+                                                                        style="width: 100px; display: inline"> <label
+                                                                class="radio-inline">默认数量为1，且不超过上方已设置的回报数量</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-2 control-label">运费(元)</label>
+                                                        <div class="col-sm-10">
+                                                            <input type="text" name="freight" value="0"
+                                                                   class="form-control"
+                                                                   style="width: 100px; display: inline">
+                                                            <label class="control-label">“0”为包邮</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="inputEmail3"
+                                                               class="col-sm-2 control-label">发票</label>
+                                                        <div class="col-sm-10">
+                                                            <label class="radio-inline"> <input type="radio"
+                                                                                                name="invoice"
+                                                                                                id="inlineRadio5"
+                                                                                                value="0"> 不可开发票
+                                                            </label> <label class="radio-inline"> <input
+                                                                type="radio" name="invoice"
+                                                                id="inlineRadio6" value="1">
+                                                            可开发票（包括个人发票和自定义抬头发票）
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="inputEmail3"
+                                                               class="col-sm-2 control-label">回报时间</label>
+                                                        <div class="col-sm-10">
+                                                            <label class="radio-inline"> 项目结束后 </label> <input
+                                                                type="text" name="returndate" value="15"
+                                                                class="form-control"
+                                                                style="width: 100px; display: inline"> <label
+                                                                class="radio-inline">天，向支持者发送回报</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="inputEmail3" class="col-sm-2 control-label"></label>
+                                                        <div class="col-sm-10">
+                                                            <button type="button" class="btn btn-primary" id="okBtn">
+                                                                确定
+                                                            </button>
+                                                            <button type="button" class="btn btn-default">取消</button>
+                                                        </div>
+                                                    </div>
+
+                                                </form>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="container">
+                                    <div class="row clearfix">
+                                        <div class="col-md-12 column">
+                                            <blockquote>
+                                                <p>
+                                                    <i class="glyphicon glyphicon-info-sign"
+                                                       style="color: #2a6496;"></i> 提示
+                                                </p>
+                                                <small>
+                                                    3个以上的回报：多些选择能提高项目的支持率。几十、几百、上千元的支持：3个不同档次的回报，能让你的项目更快成功。回报最好是项目的衍生品：<br>与项目内容有关的回报更能吸引到大家的支持。
+                                                </small>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-footer" style="text-align: center;">
+                        <button type="button" class="btn  btn-default btn-lg"
+                                onclick="window.location.href='start-step-1.html'">上一步
+                        </button>
+                        <!-- <button type="button" class="btn  btn-warning btn-lg"
+                            onclick="window.location.href='start-step-3.html'">下一步</button> -->
+                        <a th:href="@{/project/create/confirm/page}" class="btn btn-warning btn-lg">下一步</a>
+                        <a class="btn"> 预览 </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" style="margin-top: 20px;">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <div id="footer">
+                    <div class="footerNav">
+                        <a rel="nofollow" href="http://www.layoutit.cn">关于我们</a> | <a
+                            rel="nofollow" href="http://www.layoutit.cn">服务条款</a> | <a
+                            rel="nofollow" href="http://www.layoutit.cn">免责声明</a> | <a
+                            rel="nofollow" href="http://www.layoutit.cn">网站地图</a> | <a
+                            rel="nofollow" href="http://www.layoutit.cn">联系我们</a>
+                    </div>
+                    <div class="copyRight">Copyright ?2017-2017layoutit.cn 版权所有
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- /container -->
+<script type="text/javascript" th:src="@{/jquery/jquery-2.1.1.min.js}"
+        src="jquery/jquery-2.1.1.min.js"></script>
+<script type="text/javascript"
+        th:src="@{/bootstrap/js/bootstrap.min.js}"
+        src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" th:src="@{/script/docs.min.js}"
+        src="script/docs.min.js"></script>
+<script type="text/javascript" th:src="@{/script/back-to-top.js}"
+        src="script/back-to-top.js"></script>
+<script type="text/javascript">
+    $('#myTab a').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+    });
+
+    $(function () {
+
+        // 回报信息的表单部分默认隐藏
+        $(".returnFormDiv").hide();
+
+        // 点击添加回报按钮切换表单部分的显示状态
+        $("#addReturnBtn").click(function () {
+
+            // toggle()把显示的元素隐藏，把隐藏的元素显示
+            $(".returnFormDiv").toggle();
+        });
+    });
+
+    // 声明一个全局的returnObj对象用于存储整个表单的数据（包括上传到OSS的图片访问路径）
+    var returnObj = {};
+
+    // 点击上传图片按钮打开文件选择框
+    $("#uploadBtn").click(function () {
+        $("[name=returnPicture]").click();
+    });
+
+    // 在文件上传框的值改变事件响应函数中预览并上传图片
+    $("[name=returnPicture]").change(function (event) {
+
+        var file = event.target.files[0];
+
+        var url = window.url || window.webkitURL;
+
+        var path = url.createObjectURL(file);
+
+        $(this).next().next().next().next().attr("src", path).show();
+
+        // 将上传的文件封装到FormData对象中
+        var formData = new FormData();
+
+        formData.append("returnPicture", file);
+
+        // 发送Ajax请求上传文件
+        $.ajax({
+            "url": "[[@{/project/create/upload/return/picture.json}]]",
+            "type": "post",
+            "data": formData,
+            "contentType": false,
+            "processData": false,
+            "dataType": "json",
+            "success": function (response) {
+
+                var result = response.result;
+
+                if (result == "SUCCESS") {
+                    alert("上传成功！");
+
+                    // 如果上传成功，则从响应体数据中获取图片的访问路径
+                    returnObj.describPicPath = response.data;
+                }
+
+                if (result == "FAILED") {
+                    alert(response.message);
+                }
+
+            },
+            "error": function (response) {
+                alert(response.status + " " + response.statusText);
+            }
+        });
+
+    });
+
+    // 声明序号保存表格中数据的序号
+    var order = 0;
+
+    // 点击确定按钮，绑定单击响应函数
+    $("#okBtn").click(function () {
+
+        // 1.收集表单数据
+        returnObj.type = $("[name=type]:checked").val();
+        returnObj.supportmoney = $("[name=supportmoney]").val();
+        returnObj.content = $("[name=content]").val();
+        returnObj.count = $("[name=count]").val();
+        returnObj.signalpurchase = $("[name=signalpurchase]:checked").val();
+        returnObj.purchase = $("[name=purchase]").val();
+        returnObj.freight = $("[name=freight]").val();
+        returnObj.invoice = $("[name=invoice]:checked").val();
+        returnObj.returndate = $("[name=returndate]").val();
+
+        // 2.发送Ajax请求
+        $.ajax({
+            "url": "[[@{/project/create/save/return.json}]]",
+            "type": "post",
+            "dataType": "json",
+            "data": returnObj,
+            "success": function (response) {
+                var result = response.result;
+                if (result == "SUCCESS") {
+                    alert("这一条保存成功！");
+
+                    // 使用returnObj填充表格
+                    var orderTd = "<td>" + (++order) + "</td>";
+                    var supportmoneyTd = "<td>" + returnObj.supportmoney + "</td>";
+                    var countTd = "<td>" + returnObj.count + "</td>";
+                    var signalpurchaseTd = "<td>" + (returnObj.signalpurchase == 0 ? "不限购" : ("限购" + returnObj.purchase)) + "</td>";
+                    var contentTd = "<td>" + returnObj.content + "</td>";
+                    var returndateTd = "<td>" + returnObj.returndate + "天以后返还</td>";
+                    var freightTd = "<td>" + (returnObj.freight == 0 ? "包邮" : returnObj.freight) + "</td>";
+                    var operationTd = "<td><button type='button' class='btn btn-primary btn-xs'><i class=' glyphicon glyphicon-pencil'></i></button>&nbsp;<button type='button' class='btn btn-danger btn-xs'><i class=' glyphicon glyphicon-remove'></i></button></td>";
+                    var trHTML = "<tr>" + orderTd + supportmoneyTd + countTd + signalpurchaseTd + contentTd + returndateTd + freightTd + operationTd + "</tr>";
+
+                    $("#returnTableBody").append(trHTML);
+
+                    $("#returnPictureImage").hide();
+                }
+
+                if (result == "FAILED") {
+                    alert("这一条保存失败！");
+                }
+
+                // 后续操作
+                // 仅仅调用click()函数而不传入回调函数表示点击一下这个按钮
+                $("#resetBtn").click();
+
+                // 将表单部分div隐藏
+                $(".returnFormDiv").hide();
+            }
+        });
+    });
+</script>
+</body>
+</html>

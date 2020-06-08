@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <base th:href="@{/}"/>
+    <link rel="stylesheet" th:href="@{/bootstrap/css/bootstrap.min.css}"
+          href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" th:href="@{/css/font-awesome.min.css}"
+          href="css/font-awesome.min.css">
+    <link rel="stylesheet" th:href="@{/css/theme.css}" href="css/theme.css">
+    <style>
+        #footer {
+            padding: 15px 0;
+            background: #fff;
+            border-top: 1px solid #ddd;
+            text-align: center;
+        }
+
+        #topcontrol {
+            color: #fff;
+            z-index: 99;
+            width: 30px;
+            height: 30px;
+            font-size: 20px;
+            background: #222;
+            position: relative;
+            right: 14px !important;
+            bottom: 11px !important;
+            border-radius: 3px !important;
+        }
+
+        #topcontrol:after {
+            /*top: -2px;*/
+            left: 8.5px;
+            content: "\f106";
+            position: absolute;
+            text-align: center;
+            font-family: FontAwesome;
+        }
+
+        #topcontrol:hover {
+            color: #fff;
+            background: #18ba9b;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .label-type, .label-status, .label-order {
+            background-color: #fff;
+            color: #f60;
+            padding: 5px;
+            border: 1px #f60 solid;
+        }
+
+        #typeList :not (:first-child ) {
+            margin-top: 20px;
+        }
+
+        .label-txt {
+            margin: 10px 10px;
+            border: 1px solid #ddd;
+            padding: 4px;
+            font-size: 14px;
+        }
+
+        .panel {
+            border-radius: 0;
+        }
+
+        .progress-bar-default {
+            background-color: #ddd;
+        }
+
+        .selected {
+            color: yellow;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar-wrapper">
+    <div class="container">
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html" style="font-size: 32px;">尚筹网-创意产品众筹平台</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse"
+                     style="float: right;">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown"><a href="#" class="dropdown-toggle"
+                                                data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i>
+                            [[${session.loginMember.username}]]<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="member.html"><i
+                                        class="glyphicon glyphicon-scale"></i> 会员中心</a></li>
+                                <li><a href="#"><i class="glyphicon glyphicon-comment"></i>
+                                    消息</a></li>
+                                <li class="divider"></li>
+                                <li><a th:href="@{/auth/member/logout}"><i
+                                        class="glyphicon glyphicon-off"></i> 退出系统</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<div class="container theme-showcase" role="main">
+
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="collapse navbar-collapse"
+                         id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a rel="nofollow" href="index.html"><i
+                                    class="glyphicon glyphicon-home"></i> 众筹首页</a></li>
+                            <li><a rel="nofollow" href="projects.html"><i
+                                    class="glyphicon glyphicon-th-large"></i> 项目总览</a></li>
+                            <li class="active"><a rel="nofollow" href="javascript:;"><i
+                                    class="glyphicon glyphicon-edit"></i> 发起项目</a></li>
+                            <li><a rel="nofollow" href="minecrowdfunding.html"><i
+                                    class="glyphicon glyphicon-user"></i> 我的众筹</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <form id="projectForm" th:action="@{/project/create/project/information}" method="post"
+                      enctype="multipart/form-data" class="form-horizontal">
+                    <p th:text="${messages}"></p>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" style="text-align: center;">
+                            <div class="container-fluid">
+                                <div class="row clearfix">
+                                    <div class="col-md-3 column">
+                                        <div class="progress"
+                                             style="height: 50px; border-radius: 0; position: absolute; width: 75%; right: 49px;">
+                                            <div class="progress-bar progress-bar-success"
+                                                 role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                                                 aria-valuemax="100" style="width: 100%; height: 50px;">
+                                                <div style="font-size: 16px; margin-top: 15px;">1.
+                                                    项目及发起人信息
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                                style="right: 0; border: 10px solid #ddd; border-left-color: #88b7d5; border-width: 25px; position: absolute; border-left-color: rgba(92, 184, 92, 1); border-top-color: rgba(92, 184, 92, 0); border-bottom-color: rgba(92, 184, 92, 0); border-right-color: rgba(92, 184, 92, 0);">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 column">
+                                        <div class="progress"
+                                             style="height: 50px; border-radius: 0; position: absolute; width: 75%; right: 49px;">
+                                            <div class="progress-bar progress-bar-default"
+                                                 role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                                                 aria-valuemax="100" style="width: 100%; height: 50px;">
+                                                <div style="font-size: 16px; margin-top: 15px;">2.
+                                                    回报设置
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                                style="right: 0; border: 10px solid #ddd; border-left-color: #88b7d5; border-width: 25px; position: absolute; border-left-color: rgba(221, 221, 221, 1); border-top-color: rgba(221, 221, 221, 0); border-bottom-color: rgba(221, 221, 221, 0); border-right-color: rgba(221, 221, 221, 0);">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 column">
+                                        <div class="progress"
+                                             style="height: 50px; border-radius: 0; position: absolute; width: 75%; right: 49px;">
+                                            <div class="progress-bar progress-bar-default"
+                                                 role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                                                 aria-valuemax="100" style="width: 100%; height: 50px;">
+                                                <div style="font-size: 16px; margin-top: 15px;">3.
+                                                    确认信息
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                                style="right: 0; border: 10px solid #ddd; border-left-color: #88b7d5; border-width: 25px; position: absolute; border-left-color: rgba(221, 221, 221, 1); border-top-color: rgba(221, 221, 221, 0); border-bottom-color: rgba(221, 221, 221, 0); border-right-color: rgba(221, 221, 221, 0);">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 column">
+                                        <div class="progress" style="height: 50px; border-radius: 0;">
+                                            <div class="progress-bar progress-bar-default"
+                                                 role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                                                 aria-valuemax="100" style="width: 100%; height: 50px;">
+                                                <div style="font-size: 16px; margin-top: 15px;">4. 完成</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="container-fluid">
+                                <div class="row clearfix">
+                                    <div class="col-md-12 column">
+                                        <blockquote
+                                                style="border-left: 5px solid #f60; color: #f60; padding: 0 0 0 20px;">
+                                            <b> 项目及发起人信息 </b>
+                                        </blockquote>
+                                    </div>
+                                    <div class="col-md-12 column">
+                                        <div class="page-header" style="border-bottom-style: dashed;">
+                                            <h3>项目信息</h3>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputEmail1" class="col-sm-2 control-label">分类信息</label>
+                                            <div class="col-sm-10">
+                                                <label class="radio-inline">
+                                                    <input type="checkbox" name="typeIdList"
+                                                           id="inlineRadio1"
+                                                           value="1"> 科技
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input
+                                                            type="checkbox" name="typeIdList"
+                                                            id="inlineRadio2" value="2" checked="checked"> 设计
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input
+                                                            type="checkbox" name="typeIdList"
+                                                            id="inlineRadio3" value="3"> 公益
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input
+                                                            type="checkbox" name="typeIdList"
+                                                            id="inlineRadio4" value="4" checked="checked"> 农业
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputEmail2" class="col-sm-2 control-label">标签</label>
+                                            <div class="col-sm-10">
+                                                <ul style="list-style: none; padding-left: 0;">
+                                                    <li style="margin: 10px 0">[手机] <span
+                                                            class="tagLable label-txt" id="4">大屏</span> <span
+                                                            class="tagLable label-txt" id="5">美颜</span> <span
+                                                            class="tagLable label-txt" id="6">续航</span>
+                                                    </li>
+                                                    <li style="margin: 10px 0">[数码] <span
+                                                            class="tagLable label-txt" id="7">高解析度</span> <span
+                                                            class="tagLable label-txt" id="8">高清</span>
+                                                    </li>
+                                                    <li style="margin: 10px 0">[电脑] <span
+                                                            class="tagLable label-txt" id="9">大内存</span> <span
+                                                            class="tagLable label-txt" id="10">固态</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">项目名称</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" name="projectName" value="brotherMao"
+                                                       class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">一句话简介</label>
+                                            <div class="col-sm-10">
+                                                <textarea name="projectDescription" class="form-control"
+                                                          rows="5">就是帅！</textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">筹资金额（元）</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" name="money" value="100000" class="form-control"
+                                                       style="width: 100px;"> <label
+                                                    class="control-label">筹资金额不能低于100元,不能高于1000000000元</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">筹资天数（天）</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" name="day" value="30" class="form-control"
+                                                       style="width: 100px;"> <label
+                                                    class="control-label">一般10-90天，建议30天</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">项目头图</label>
+                                            <div class="col-sm-10">
+                                                <input type="file" name="headerPicture"
+                                                       style="display: none;"/>
+                                                <button id="uploadHeadBtn" type="button"
+                                                        class="btn btn-primary btn-lg active">上传图片
+                                                </button>
+                                                <label class="control-label">图片上无文字,支持jpg、jpeg、png、gif格式，大小不超过2M，建议尺寸：740*457px</label>
+                                                <br/><img style="display: none;"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">项目详情</label>
+                                            <div class="col-sm-10">
+                                                <input type="file" multiple="multiple" name="detailPictureList"
+                                                       style="display: none;"/>
+                                                <button id="uploadDetailBtn" type="button"
+                                                        class="btn btn-primary btn-lg active">上传图片
+                                                </button>
+                                                <label class="control-label">支持jpg、jpeg、png、gif格式，大小不超过2M，建议尺寸：宽740px</label>
+                                                <div id="showDetailPicture"></div>
+                                            </div>
+                                        </div>
+                                        <!-- </form> -->
+                                    </div>
+                                    <div class="col-md-12 column">
+                                        <div class="page-header" style="border-bottom-style: dashed;">
+                                            <h3>发起人信息</h3>
+                                        </div>
+                                        <!-- <form class="form-horizontal"> -->
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">自我介绍</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" name="memberLauchInfoVO.descriptionSimple"
+                                                       value="i am mao" class="form-control"
+                                                       placeholder="一句话自我介绍，不超过40字">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">详细自我介绍</label>
+                                            <div class="col-sm-10">
+													<textarea name="memberLauchInfoVO.descriptionDetail"
+                                                              class="form-control" rows="5"
+                                                              placeholder="向支持者详细介绍你自己或你的团队及项目背景，让支持者在最短时间内了解你，不超过160字">我是猫哥</textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">联系电话</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" name="memberLauchInfoVO.phoneNum" value="123456"
+                                                       class="form-control"
+                                                       placeholder="此信息不会显示在项目页面">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">客服电话</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" name="memberLauchInfoVO.serviceNum" value="654321"
+                                                       class="form-control"
+                                                       placeholder="此信息显示在项目页面">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer" style="text-align: center;">
+                            <!--<a  href="http://localhost:80/project/return/info/page" type="button" class="btn  btn-warning btn-lg">下一步</a>-->
+                            <button id="submitBtn" type="button" class="btn  btn-warning btn-lg">下一步</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" style="margin-top: 20px;">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <div id="footer">
+                    <div class="footerNav">
+                        <a rel="nofollow" href="http://www.layoutit.cn">关于我们</a> | <a
+                            rel="nofollow" href="http://www.layoutit.cn">服务条款</a> | <a
+                            rel="nofollow" href="http://www.layoutit.cn">免责声明</a> | <a
+                            rel="nofollow" href="http://www.layoutit.cn">网站地图</a> | <a
+                            rel="nofollow" href="http://www.layoutit.cn">联系我们</a>
+                    </div>
+                    <div class="copyRight">Copyright ?2017-2017layoutit.cn 版权所有
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- /container -->
+<script type="text/javascript" th:src="@{/jquery/jquery-2.1.1.min.js}"
+        src="jquery/jquery-2.1.1.min.js"></script>
+<script type="text/javascript"
+        th:src="@{/bootstrap/js/bootstrap.min.js}"
+        src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" th:src="@{/script/docs.min.js}"
+        src="script/docs.min.js"></script>
+<script type="text/javascript" th:src="@{/script/back-to-top.js}"
+        src="script/back-to-top.js"></script>
+<script type="text/javascript">
+    $('#myTab a').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+    });
+
+    // 声明全局变量用于存储选中的标签的id
+    var tagIdList = new Array();
+
+    $(".tagLable").click(function () {
+
+        // 标签文本显示框如果有selected就去掉，如果没有就加上
+        $(this).toggleClass("selected");
+
+        // 获取当前文本显示框的id（也就是标签的id）
+        var tagId = this.id;
+
+        // 判定tagId是否在数组中，如果在则删除，如果不在则添加
+        checkExitsts(tagIdList, tagId);
+
+        console.log(tagIdList);
+
+    });
+
+    function checkExitsts(arr, id) {
+        for (var i = 0; i < arr.length; i++) {
+            var value = arr[i];
+            if (value == id) {
+
+                // 从数组中删除元素，i是元素索引，1是删除数量
+                arr.splice(i, 1);
+
+                return;
+            }
+        }
+
+        // 将当前标签的id加入数组
+        arr.push(id);
+    }
+
+    $("#uploadHeadBtn").click(function () {
+
+        // 调用click()函数，相当于被点击了一下
+        $("[name=headerPicture]").click();
+    });
+
+    $("[name=headerPicture]").change(function (event) {
+
+        // 获取用户选中的文件
+        var files = event.target.files;
+
+        // 使用下标0，选择唯一的一个文件
+        var file = files[0];
+
+        // 获取URL对象
+        var url = window.url || window.webkitURL;
+
+        // 调用url对象的createObjectURL()方法获取当前选中的文件在系统中的路径
+        var path = url.createObjectURL(file);
+
+        // 使用path修改img标签的src属性
+        $(this).next().next().next().next().attr("src", path).show();
+
+    });
+
+    $("#uploadDetailBtn").click(function () {
+
+        $("[name=detailPictureList]").click();
+
+    });
+
+    $("[name=detailPictureList]").change(function (event) {
+
+        $("#showDetailPicture").empty();
+
+        var files = event.target.files;
+
+        var url = window.url || window.webkitURL;
+
+        for (var i = 0; i < files.length; i++) {
+            var file = files[i];
+
+            var path = url.createObjectURL(file);
+
+            var imgHtml = "<img src='" + path + "' /><br/>";
+
+            $("#showDetailPicture").append(imgHtml);
+        }
+
+    });
+
+    // 点击下一步按钮提交表单
+    $("#submitBtn").click(function () {
+
+        // 将表单中标签id的值组成的数组转换成表单内的隐藏域
+        for (var i = 0; i < tagIdList.length; i++) {
+            var tagId = tagIdList[i];
+
+            var hiddenInputHTML = "<input type='hidden' name='tagIdList' value='" + tagId + "' />";
+
+            $("#projectForm").append(hiddenInputHTML);
+        }
+
+        // 提交表单
+        $("#projectForm").submit();
+    });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+server:
+  port: 5000
+spring:
+  application:
+    name: ccctop-crowd-project
+  thymeleaf:
+    check-template-location: true
+    prefix: classpath:/templates/
+    suffix: .html
+  redis:
+    host: localhost
+    password: root
+  session:
+    store-type: redis
+  main:
+    allow-bean-definition-overriding: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka
+aliyun:
+  oss:
+    access-key-id: LTAI4G3SBTcFnj2FGxU2MnJVx
+    access-key-secret: Au7Jvt4vJqk6aHcDm3Z3Xzw2ChOcYHx
+    bucket-domain: http://ccctop-first.oss-cn-chengdu.aliyuncs.comx
+    bucket-name: ccctop-firstx
+    end-point: http://oss-cn-chengdu.aliyuncs.comx

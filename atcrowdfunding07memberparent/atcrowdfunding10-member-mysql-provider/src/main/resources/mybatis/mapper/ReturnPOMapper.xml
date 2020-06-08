@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ccctop.cloud.mapper.ReturnPOMapper" >
+  <resultMap id="BaseResultMap" type="com.ccctop.crowd.entity.po.ReturnPO" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="projectid" property="projectid" jdbcType="INTEGER" />
+    <result column="type" property="type" jdbcType="INTEGER" />
+    <result column="supportmoney" property="supportmoney" jdbcType="INTEGER" />
+    <result column="content" property="content" jdbcType="VARCHAR" />
+    <result column="count" property="count" jdbcType="INTEGER" />
+    <result column="signalpurchase" property="signalpurchase" jdbcType="INTEGER" />
+    <result column="purchase" property="purchase" jdbcType="INTEGER" />
+    <result column="freight" property="freight" jdbcType="INTEGER" />
+    <result column="invoice" property="invoice" jdbcType="INTEGER" />
+    <result column="returndate" property="returndate" jdbcType="INTEGER" />
+    <result column="describ_pic_path" property="describPicPath" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    id, projectid, type, supportmoney, content, count, signalpurchase, purchase, freight, 
+    invoice, returndate, describ_pic_path
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.ccctop.crowd.entity.po.ReturnPOExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from t_return
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_return
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from t_return
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.ccctop.crowd.entity.po.ReturnPOExample" >
+    delete from t_return
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insertReturnPOBatch">
+    insert into t_return (
+    projectid,
+    type,
+    supportmoney,
+    content,
+    count,
+    signalpurchase,
+    purchase,
+    freight,
+    invoice,
+    returndate,
+    describ_pic_path
+    )
+    values
+    <foreach collection="returnPOList" item="returnPO" separator=",">
+      (
+      #{projectId},
+      #{returnPO.type},
+      #{returnPO.supportmoney},
+      #{returnPO.content},
+      #{returnPO.count},
+      #{returnPO.signalpurchase},
+      #{returnPO.purchase},
+      #{returnPO.freight},
+      #{returnPO.invoice},
+      #{returnPO.returndate},
+      #{returnPO.describPicPath}
+      )
+    </foreach>
+  </insert>
+
+
+  <insert id="insert" parameterType="com.ccctop.crowd.entity.po.ReturnPO" >
+    insert into t_return (id, projectid, type, 
+      supportmoney, content, count, 
+      signalpurchase, purchase, freight, 
+      invoice, returndate, describ_pic_path
+      )
+    values (#{id,jdbcType=INTEGER}, #{projectid,jdbcType=INTEGER}, #{type,jdbcType=INTEGER}, 
+      #{supportmoney,jdbcType=INTEGER}, #{content,jdbcType=VARCHAR}, #{count,jdbcType=INTEGER}, 
+      #{signalpurchase,jdbcType=INTEGER}, #{purchase,jdbcType=INTEGER}, #{freight,jdbcType=INTEGER}, 
+      #{invoice,jdbcType=INTEGER}, #{returndate,jdbcType=INTEGER}, #{describPicPath,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.ccctop.crowd.entity.po.ReturnPO" >
+    insert into t_return
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="projectid != null" >
+        projectid,
+      </if>
+      <if test="type != null" >
+        type,
+      </if>
+      <if test="supportmoney != null" >
+        supportmoney,
+      </if>
+      <if test="content != null" >
+        content,
+      </if>
+      <if test="count != null" >
+        count,
+      </if>
+      <if test="signalpurchase != null" >
+        signalpurchase,
+      </if>
+      <if test="purchase != null" >
+        purchase,
+      </if>
+      <if test="freight != null" >
+        freight,
+      </if>
+      <if test="invoice != null" >
+        invoice,
+      </if>
+      <if test="returndate != null" >
+        returndate,
+      </if>
+      <if test="describPicPath != null" >
+        describ_pic_path,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="projectid != null" >
+        #{projectid,jdbcType=INTEGER},
+      </if>
+      <if test="type != null" >
+        #{type,jdbcType=INTEGER},
+      </if>
+      <if test="supportmoney != null" >
+        #{supportmoney,jdbcType=INTEGER},
+      </if>
+      <if test="content != null" >
+        #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="count != null" >
+        #{count,jdbcType=INTEGER},
+      </if>
+      <if test="signalpurchase != null" >
+        #{signalpurchase,jdbcType=INTEGER},
+      </if>
+      <if test="purchase != null" >
+        #{purchase,jdbcType=INTEGER},
+      </if>
+      <if test="freight != null" >
+        #{freight,jdbcType=INTEGER},
+      </if>
+      <if test="invoice != null" >
+        #{invoice,jdbcType=INTEGER},
+      </if>
+      <if test="returndate != null" >
+        #{returndate,jdbcType=INTEGER},
+      </if>
+      <if test="describPicPath != null" >
+        #{describPicPath,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.ccctop.crowd.entity.po.ReturnPOExample" resultType="java.lang.Integer" >
+    select count(*) from t_return
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update t_return
+    <set >
+      <if test="record.id != null" >
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.projectid != null" >
+        projectid = #{record.projectid,jdbcType=INTEGER},
+      </if>
+      <if test="record.type != null" >
+        type = #{record.type,jdbcType=INTEGER},
+      </if>
+      <if test="record.supportmoney != null" >
+        supportmoney = #{record.supportmoney,jdbcType=INTEGER},
+      </if>
+      <if test="record.content != null" >
+        content = #{record.content,jdbcType=VARCHAR},
+      </if>
+      <if test="record.count != null" >
+        count = #{record.count,jdbcType=INTEGER},
+      </if>
+      <if test="record.signalpurchase != null" >
+        signalpurchase = #{record.signalpurchase,jdbcType=INTEGER},
+      </if>
+      <if test="record.purchase != null" >
+        purchase = #{record.purchase,jdbcType=INTEGER},
+      </if>
+      <if test="record.freight != null" >
+        freight = #{record.freight,jdbcType=INTEGER},
+      </if>
+      <if test="record.invoice != null" >
+        invoice = #{record.invoice,jdbcType=INTEGER},
+      </if>
+      <if test="record.returndate != null" >
+        returndate = #{record.returndate,jdbcType=INTEGER},
+      </if>
+      <if test="record.describPicPath != null" >
+        describ_pic_path = #{record.describPicPath,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update t_return
+    set id = #{record.id,jdbcType=INTEGER},
+      projectid = #{record.projectid,jdbcType=INTEGER},
+      type = #{record.type,jdbcType=INTEGER},
+      supportmoney = #{record.supportmoney,jdbcType=INTEGER},
+      content = #{record.content,jdbcType=VARCHAR},
+      count = #{record.count,jdbcType=INTEGER},
+      signalpurchase = #{record.signalpurchase,jdbcType=INTEGER},
+      purchase = #{record.purchase,jdbcType=INTEGER},
+      freight = #{record.freight,jdbcType=INTEGER},
+      invoice = #{record.invoice,jdbcType=INTEGER},
+      returndate = #{record.returndate,jdbcType=INTEGER},
+      describ_pic_path = #{record.describPicPath,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.ccctop.crowd.entity.po.ReturnPO" >
+    update t_return
+    <set >
+      <if test="projectid != null" >
+        projectid = #{projectid,jdbcType=INTEGER},
+      </if>
+      <if test="type != null" >
+        type = #{type,jdbcType=INTEGER},
+      </if>
+      <if test="supportmoney != null" >
+        supportmoney = #{supportmoney,jdbcType=INTEGER},
+      </if>
+      <if test="content != null" >
+        content = #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="count != null" >
+        count = #{count,jdbcType=INTEGER},
+      </if>
+      <if test="signalpurchase != null" >
+        signalpurchase = #{signalpurchase,jdbcType=INTEGER},
+      </if>
+      <if test="purchase != null" >
+        purchase = #{purchase,jdbcType=INTEGER},
+      </if>
+      <if test="freight != null" >
+        freight = #{freight,jdbcType=INTEGER},
+      </if>
+      <if test="invoice != null" >
+        invoice = #{invoice,jdbcType=INTEGER},
+      </if>
+      <if test="returndate != null" >
+        returndate = #{returndate,jdbcType=INTEGER},
+      </if>
+      <if test="describPicPath != null" >
+        describ_pic_path = #{describPicPath,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.ccctop.crowd.entity.po.ReturnPO" >
+    update t_return
+    set projectid = #{projectid,jdbcType=INTEGER},
+      type = #{type,jdbcType=INTEGER},
+      supportmoney = #{supportmoney,jdbcType=INTEGER},
+      content = #{content,jdbcType=VARCHAR},
+      count = #{count,jdbcType=INTEGER},
+      signalpurchase = #{signalpurchase,jdbcType=INTEGER},
+      purchase = #{purchase,jdbcType=INTEGER},
+      freight = #{freight,jdbcType=INTEGER},
+      invoice = #{invoice,jdbcType=INTEGER},
+      returndate = #{returndate,jdbcType=INTEGER},
+      describ_pic_path = #{describPicPath,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

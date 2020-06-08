@@ -1,0 +1,44 @@
+server:
+  port: 81
+spring:
+  application:
+    name: atguigu-crowd-zuul
+  redis:
+    host: xx
+    password: xx
+  session:
+    store-type: redis
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka
+
+zuul:
+  ignored-services: "*"
+  routes:
+    crowd-portal:
+      service-id: ccctop-crowd-auth
+      path: /** # 这里一定要使用两个“*”号，不然“/”路径后面的多层路径将无法访问
+    crowd-project:
+      service-id: ccctop-crowd-project
+      path: /project/**
+    crowd-order:
+      service-id: ccctop-crowd-order
+      path: /order/**
+    crowd-pay:
+      service-id: ccctop-crowd-pay
+      path: /pay/**
+
+  sensitive-headers: "*"
+ribbon:
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
+

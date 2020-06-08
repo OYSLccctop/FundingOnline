@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="EntryPointsManager">
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="org.springframework.beans.factory.annotation.Autowired" />
+    </list>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/../atcrowdfunding01adminparent/atcrowdfunding02-admin-webui" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../atcrowdfunding01adminparent/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/atcrowdfunding11-member-redis-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/atcrowdfunding12-member-authentication-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/atcrowdfunding13-member-project-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/atcrowdfunding15-member-pay-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/atcrowdfunding15memberpayconsumer/pom.xml" />
+        <option value="$PROJECT_DIR$/atcrowdfunding16-member-zuul/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

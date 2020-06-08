@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/atcrowdfunding01adminparent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding03-admin-component" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding04-admin-entity" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding05-common-util" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding06-common-reverse" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/atcrowdfunding05commonutils" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/atcrowdfunding05commonutils/src/main/java/com/ccctop/crowd/constant/AccessPassResources.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/atcrowdfunding07memberparent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding08-member-eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding09-member-entity" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding11-member-redisserver-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding13-member-projectServer-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding14-member-order-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding15-member-payServer-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding16-member-zuulserver" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding17-member-api" charset="UTF-8" />
+  </component>
+</project>
