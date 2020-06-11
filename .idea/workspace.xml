@@ -6,448 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8511d940-7aed-44fd-a420-ebd1ae555194" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/resources/mybatis/mapper/AdminMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/resources/mybatis/mapper/AuthMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/resources/mybatis/mapper/MenuMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/resources/mybatis/mapper/RoleMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/resources/spring-persist-mybatis.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/resources/spring-persist-tx.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/resources/spring-web-mvc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/WEB-INF/admin-add.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/WEB-INF/admin-edit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/WEB-INF/admin-login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/WEB-INF/admin-main.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/WEB-INF/admin-page.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/WEB-INF/assign-role.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/WEB-INF/include-head.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/WEB-INF/include-nav.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/WEB-INF/include-sidebar.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/WEB-INF/menu-page.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/WEB-INF/modal-menu-add.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/WEB-INF/modal-menu-confirm.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/WEB-INF/modal-menu-edit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/WEB-INF/modal-role-assign-auth.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/WEB-INF/model-role-add.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/WEB-INF/model-role-confirm.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/WEB-INF/model-role-edit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/WEB-INF/role-page.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/WEB-INF/system-error.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/WEB-INF/target.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/bootstrap/css/bootstrap-theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/bootstrap/css/bootstrap-theme.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/bootstrap/css/bootstrap-theme.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/bootstrap/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/bootstrap/js/npm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/crowd/my-menu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/crowd/my-role.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/css/carousel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/css/doc.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/css/pagination.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/css/theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/fonts/fontawesome4.2/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/fonts/fontawesome4.2/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/fonts/fontawesome4.2/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/fonts/fontawesome4.2/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/fonts/fontawesome4.2/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/img/carousel-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/img/carousel-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/img/carousel-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/img/p1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/img/p2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/img/p3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/img/p3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/img/pic.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/img/product-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/img/product-2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/img/product-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/img/product-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/img/product-5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/img/product-6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/img/product-7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/img/product-8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/img/product-9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/img/product_detail_body.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/img/product_detail_head.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/img/services-box1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/img/services-box2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/img/services-box3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/img/services-box4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/jquery/jquery-2.1.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/jquery/jquery-form.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/jquery/jquery.pagination.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/layer/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/layer/mobile/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/layer/mobile/need/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/layer/theme/default/icon-ext.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/layer/theme/default/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/layer/theme/default/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/layer/theme/default/loading-0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/layer/theme/default/loading-1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/layer/theme/default/loading-2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/script/back-to-top.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/script/docs.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/script/echarts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/ztree/img/diy/1_close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/ztree/img/diy/1_open.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/ztree/img/diy/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/ztree/img/diy/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/ztree/img/diy/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/ztree/img/diy/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/ztree/img/diy/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/ztree/img/diy/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/ztree/img/diy/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/ztree/img/diy/9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/ztree/img/line_conn.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/ztree/img/loading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/ztree/img/zTreeStandard.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/ztree/img/zTreeStandard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/ztree/jquery.ztree.all-3.5.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding02-admin-webui/src/main/webapp/ztree/zTreeStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding03-admin-component/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding03-admin-component/src/main/java/com/atguigu/crowd/mapper/AdminMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding03-admin-component/src/main/java/com/atguigu/crowd/mapper/AuthMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding03-admin-component/src/main/java/com/atguigu/crowd/mapper/MenuMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding03-admin-component/src/main/java/com/atguigu/crowd/mapper/RoleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding03-admin-component/src/main/java/com/atguigu/crowd/mvc/config/CrowdExceptionResolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding03-admin-component/src/main/java/com/atguigu/crowd/mvc/config/CrowdUserDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding03-admin-component/src/main/java/com/atguigu/crowd/mvc/config/SecurityAdmin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding03-admin-component/src/main/java/com/atguigu/crowd/mvc/config/WebAppSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding03-admin-component/src/main/java/com/atguigu/crowd/mvc/handler/AdminHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding03-admin-component/src/main/java/com/atguigu/crowd/mvc/handler/AssignHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding03-admin-component/src/main/java/com/atguigu/crowd/mvc/handler/MenuHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding03-admin-component/src/main/java/com/atguigu/crowd/mvc/handler/RoleHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding03-admin-component/src/main/java/com/atguigu/crowd/mvc/interceptor/LoginInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding03-admin-component/src/main/java/com/atguigu/crowd/service/api/AdminService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding03-admin-component/src/main/java/com/atguigu/crowd/service/api/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding03-admin-component/src/main/java/com/atguigu/crowd/service/api/MenuService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding03-admin-component/src/main/java/com/atguigu/crowd/service/api/RoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding03-admin-component/src/main/java/com/atguigu/crowd/service/impl/AdminServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding03-admin-component/src/main/java/com/atguigu/crowd/service/impl/AuthServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding03-admin-component/src/main/java/com/atguigu/crowd/service/impl/MenuServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding03-admin-component/src/main/java/com/atguigu/crowd/service/impl/RoleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding03-admin-component/src/test/java/BCTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding04-admin-entity/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding04-admin-entity/src/main/java/com/atguigu/crowd/entity/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding04-admin-entity/src/main/java/com/atguigu/crowd/entity/AdminExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding04-admin-entity/src/main/java/com/atguigu/crowd/entity/Auth.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding04-admin-entity/src/main/java/com/atguigu/crowd/entity/AuthExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding04-admin-entity/src/main/java/com/atguigu/crowd/entity/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding04-admin-entity/src/main/java/com/atguigu/crowd/entity/MenuExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding04-admin-entity/src/main/java/com/atguigu/crowd/entity/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/atcrowdfunding04-admin-entity/src/main/java/com/atguigu/crowd/entity/RoleExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding01adminparent/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding05commonutils/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding05commonutils/src/main/java/com/ccctop/crowd/constant/AccessPassResources.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding05commonutils/src/main/java/com/ccctop/crowd/constant/CrowdConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding05commonutils/src/main/java/com/ccctop/crowd/exception/AccessForbiddenException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding05commonutils/src/main/java/com/ccctop/crowd/exception/LoginAcctAlreadyInUseException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding05commonutils/src/main/java/com/ccctop/crowd/exception/LoginAcctAlreadyInUseForUpdateException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding05commonutils/src/main/java/com/ccctop/crowd/exception/LoginFaildException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding05commonutils/src/main/java/com/ccctop/crowd/util/CrowdUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding05commonutils/src/main/java/com/ccctop/crowd/util/HttpUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding05commonutils/src/main/java/com/ccctop/crowd/util/ResultEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding05commonutils/target/atcrowdfunding05-common-utils-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding05commonutils/target/classes/com/ccctop/crowd/constant/AccessPassResources.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding05commonutils/target/classes/com/ccctop/crowd/constant/CrowdConstant.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding05commonutils/target/classes/com/ccctop/crowd/exception/AccessForbiddenException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding05commonutils/target/classes/com/ccctop/crowd/exception/LoginAcctAlreadyInUseException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding05commonutils/target/classes/com/ccctop/crowd/exception/LoginAcctAlreadyInUseForUpdateException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding05commonutils/target/classes/com/ccctop/crowd/exception/LoginFaildException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding05commonutils/target/classes/com/ccctop/crowd/util/CrowdUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding05commonutils/target/classes/com/ccctop/crowd/util/HttpUtils$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding05commonutils/target/classes/com/ccctop/crowd/util/HttpUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding05commonutils/target/classes/com/ccctop/crowd/util/ResultEntity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding05commonutils/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding05commonutils/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding05commonutils/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding05commonutils/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding06commonreverses/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding06commonreverses/src/main/java/com/atguigu/crowd/entity/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding06commonreverses/src/main/java/com/atguigu/crowd/entity/AdminExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding06commonreverses/src/main/java/com/atguigu/crowd/entity/Auth.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding06commonreverses/src/main/java/com/atguigu/crowd/entity/Auth.java.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding06commonreverses/src/main/java/com/atguigu/crowd/entity/Auth.java.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding06commonreverses/src/main/java/com/atguigu/crowd/entity/AuthExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding06commonreverses/src/main/java/com/atguigu/crowd/entity/AuthExample.java.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding06commonreverses/src/main/java/com/atguigu/crowd/entity/AuthExample.java.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding06commonreverses/src/main/java/com/atguigu/crowd/entity/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding06commonreverses/src/main/java/com/atguigu/crowd/entity/MenuExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding06commonreverses/src/main/java/com/atguigu/crowd/entity/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding06commonreverses/src/main/java/com/atguigu/crowd/entity/RoleExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding06commonreverses/src/main/java/com/atguigu/crowd/mapper/AdminMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding06commonreverses/src/main/java/com/atguigu/crowd/mapper/AdminMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding06commonreverses/src/main/java/com/atguigu/crowd/mapper/AuthMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding06commonreverses/src/main/java/com/atguigu/crowd/mapper/AuthMapper.java.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding06commonreverses/src/main/java/com/atguigu/crowd/mapper/AuthMapper.java.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding06commonreverses/src/main/java/com/atguigu/crowd/mapper/AuthMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding06commonreverses/src/main/java/com/atguigu/crowd/mapper/MenuMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding06commonreverses/src/main/java/com/atguigu/crowd/mapper/MenuMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding06commonreverses/src/main/java/com/atguigu/crowd/mapper/RoleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding06commonreverses/src/main/java/com/atguigu/crowd/mapper/RoleMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding06commonreverses/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding08-member-eureka/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding08-member-eureka/src/main/java/com/ccctop/cloud/CrowdEurekaMainType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding08-member-eureka/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding09-member-entity/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding09-member-entity/src/main/java/com/ccctop/crowd/entity/po/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding09-member-entity/src/main/java/com/ccctop/crowd/entity/po/AddressExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding09-member-entity/src/main/java/com/ccctop/crowd/entity/po/MemberConfirmInfoPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding09-member-entity/src/main/java/com/ccctop/crowd/entity/po/MemberConfirmInfoPOExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding09-member-entity/src/main/java/com/ccctop/crowd/entity/po/MemberLaunchInfoPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding09-member-entity/src/main/java/com/ccctop/crowd/entity/po/MemberLaunchInfoPOExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding09-member-entity/src/main/java/com/ccctop/crowd/entity/po/MemberPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding09-member-entity/src/main/java/com/ccctop/crowd/entity/po/MemberPOExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding09-member-entity/src/main/java/com/ccctop/crowd/entity/po/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding09-member-entity/src/main/java/com/ccctop/crowd/entity/po/OrderExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding09-member-entity/src/main/java/com/ccctop/crowd/entity/po/OrderPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding09-member-entity/src/main/java/com/ccctop/crowd/entity/po/OrderPOExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding09-member-entity/src/main/java/com/ccctop/crowd/entity/po/OrderProject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding09-member-entity/src/main/java/com/ccctop/crowd/entity/po/OrderProjectExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding09-member-entity/src/main/java/com/ccctop/crowd/entity/po/ProjectItemPicPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding09-member-entity/src/main/java/com/ccctop/crowd/entity/po/ProjectItemPicPOExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding09-member-entity/src/main/java/com/ccctop/crowd/entity/po/ProjectPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding09-member-entity/src/main/java/com/ccctop/crowd/entity/po/ProjectPOExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding09-member-entity/src/main/java/com/ccctop/crowd/entity/po/ReturnPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding09-member-entity/src/main/java/com/ccctop/crowd/entity/po/ReturnPOExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding09-member-entity/src/main/java/com/ccctop/crowd/entity/po/TagPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding09-member-entity/src/main/java/com/ccctop/crowd/entity/po/TagPOExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding09-member-entity/src/main/java/com/ccctop/crowd/entity/po/TypePO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding09-member-entity/src/main/java/com/ccctop/crowd/entity/po/TypePOExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding09-member-entity/src/main/java/com/ccctop/crowd/entity/vo/AddressVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding09-member-entity/src/main/java/com/ccctop/crowd/entity/vo/DetailProjectVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding09-member-entity/src/main/java/com/ccctop/crowd/entity/vo/DetailReturnVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding09-member-entity/src/main/java/com/ccctop/crowd/entity/vo/MemberConfirmInfoVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding09-member-entity/src/main/java/com/ccctop/crowd/entity/vo/MemberLauchInfoVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding09-member-entity/src/main/java/com/ccctop/crowd/entity/vo/MemberLoginVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding09-member-entity/src/main/java/com/ccctop/crowd/entity/vo/MemberVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding09-member-entity/src/main/java/com/ccctop/crowd/entity/vo/OrderProjectVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding09-member-entity/src/main/java/com/ccctop/crowd/entity/vo/OrderVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding09-member-entity/src/main/java/com/ccctop/crowd/entity/vo/PortalProjectVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding09-member-entity/src/main/java/com/ccctop/crowd/entity/vo/PortalTypeVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding09-member-entity/src/main/java/com/ccctop/crowd/entity/vo/ProjectVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding09-member-entity/src/main/java/com/ccctop/crowd/entity/vo/ReturnVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/src/main/java/com/ccctop/cloud/CrowdMysqlProviderMainType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/src/main/java/com/ccctop/cloud/handler/MemberProviderHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/src/main/java/com/ccctop/cloud/handler/OrderProviderHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/src/main/java/com/ccctop/cloud/handler/ProjectProviderHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/src/main/java/com/ccctop/cloud/mapper/AddressMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/src/main/java/com/ccctop/cloud/mapper/MemberConfirmInfoPOMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/src/main/java/com/ccctop/cloud/mapper/MemberLaunchInfoPOMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/src/main/java/com/ccctop/cloud/mapper/MemberPOMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/src/main/java/com/ccctop/cloud/mapper/OrderMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/src/main/java/com/ccctop/cloud/mapper/OrderPOMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/src/main/java/com/ccctop/cloud/mapper/OrderProjectMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/src/main/java/com/ccctop/cloud/mapper/ProjectItemPicPOMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/src/main/java/com/ccctop/cloud/mapper/ProjectPOMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/src/main/java/com/ccctop/cloud/mapper/ReturnPOMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/src/main/java/com/ccctop/cloud/mapper/TagPOMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/src/main/java/com/ccctop/cloud/mapper/TypePOMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/src/main/java/com/ccctop/cloud/service/api/MemberService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/src/main/java/com/ccctop/cloud/service/api/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/src/main/java/com/ccctop/cloud/service/api/ProjectService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/src/main/java/com/ccctop/cloud/service/impl/MemberServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/src/main/java/com/ccctop/cloud/service/impl/OderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/src/main/java/com/ccctop/cloud/service/impl/ProjectServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/src/main/resources/mybatis-generator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/src/main/resources/mybatis/mapper/AddressMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/src/main/resources/mybatis/mapper/MemberConfirmInfoPOMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/src/main/resources/mybatis/mapper/MemberLaunchInfoPOMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/src/main/resources/mybatis/mapper/MemberPOMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/src/main/resources/mybatis/mapper/OrderMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/src/main/resources/mybatis/mapper/OrderPOMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/src/main/resources/mybatis/mapper/OrderProjectMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/src/main/resources/mybatis/mapper/ProjectItemPicPOMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/src/main/resources/mybatis/mapper/ProjectPOMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/src/main/resources/mybatis/mapper/ReturnPOMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/src/main/resources/mybatis/mapper/TagPOMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/src/main/resources/mybatis/mapper/TypePOMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/src/test/java/com/ccctop/cloud/MybatisTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding11-member-redisserver-provider/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding11-member-redisserver-provider/src/main/java/com/ccctop/cloud/CrowdRedisMainType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding11-member-redisserver-provider/src/main/java/com/ccctop/cloud/handler/RedisHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding11-member-redisserver-provider/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding11-member-redisserver-provider/src/test/java/com/ccctop/cloud/CrowdRedisTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/java/com/ccctop/crowd/CrowdAuthMainType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/java/com/ccctop/crowd/config/CrowdWebMvcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/java/com/ccctop/crowd/config/ShortMessageProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/java/com/ccctop/crowd/handler/MemberHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/java/com/ccctop/crowd/handler/PortalHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/bootstrap/css/bootstrap-theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/bootstrap/css/bootstrap-theme.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/bootstrap/css/bootstrap-theme.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/bootstrap/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/bootstrap/js/npm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/css/carousel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/css/doc.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/css/theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/fonts/fontawesome4.2/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/fonts/fontawesome4.2/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/fonts/fontawesome4.2/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/fonts/fontawesome4.2/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/fonts/fontawesome4.2/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/img/carousel-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/img/carousel-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/img/carousel-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/img/p1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/img/p2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/img/p3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/img/p3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/img/pic.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/img/product-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/img/product-2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/img/product-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/img/product-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/img/product-5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/img/product-6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/img/product-7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/img/product-8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/img/product-9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/img/product_detail_body.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/img/product_detail_head.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/img/services-box1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/img/services-box2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/img/services-box3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/img/services-box4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/jquery/jquery-2.1.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/jquery/jquery-form.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/jquery/jquery.pagination.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/layer/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/layer/mobile/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/layer/mobile/need/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/layer/theme/default/icon-ext.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/layer/theme/default/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/layer/theme/default/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/layer/theme/default/loading-0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/layer/theme/default/loading-1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/layer/theme/default/loading-2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/script/back-to-top.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/script/docs.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/script/echarts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/ztree/img/diy/1_close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/ztree/img/diy/1_open.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/ztree/img/diy/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/ztree/img/diy/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/ztree/img/diy/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/ztree/img/diy/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/ztree/img/diy/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/ztree/img/diy/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/ztree/img/diy/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/ztree/img/diy/9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/ztree/img/line_conn.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/ztree/img/loading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/ztree/img/zTreeStandard.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/ztree/img/zTreeStandard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/ztree/jquery.ztree.all-3.5.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/static/ztree/zTreeStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/templates/member-center.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/templates/member-crowd.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/templates/member-login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/templates/member-reg.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding12-member-authenticationserver-consumer/src/main/resources/templates/portal.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding13-member-projectServer-consumer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding13-member-projectServer-consumer/src/main/java/com/ccctop/crowd/CrowdProjectMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding13-member-projectServer-consumer/src/main/java/com/ccctop/crowd/config/CrowdWebMvcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding13-member-projectServer-consumer/src/main/java/com/ccctop/crowd/config/OSSProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding13-member-projectServer-consumer/src/main/java/com/ccctop/crowd/handler/ProjectConsumerHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding13-member-projectServer-consumer/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding13-member-projectServer-consumer/src/main/resources/templates/project-agree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding13-member-projectServer-consumer/src/main/resources/templates/project-confirm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding13-member-projectServer-consumer/src/main/resources/templates/project-detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding13-member-projectServer-consumer/src/main/resources/templates/project-launch.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding13-member-projectServer-consumer/src/main/resources/templates/project-return.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding13-member-projectServer-consumer/src/main/resources/templates/project-show-detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding13-member-projectServer-consumer/src/main/resources/templates/project-success.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding14-member-order-consumer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding14-member-order-consumer/src/main/java/com/ccctop/crowd/CrowdOrderMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding14-member-order-consumer/src/main/java/com/ccctop/crowd/handler/OrderHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding14-member-order-consumer/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding14-member-order-consumer/src/main/resources/templates/confirm_order.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding14-member-order-consumer/src/main/resources/templates/confirm_return.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding15-member-payServer-consumer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding15-member-payServer-consumer/src/main/java/com/ccctop/crowd/CrowdPayMainType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding15-member-payServer-consumer/src/main/java/com/ccctop/crowd/config/PayProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding15-member-payServer-consumer/src/main/java/com/ccctop/crowd/handler/PayHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding15-member-payServer-consumer/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding16-member-zuulserver/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding16-member-zuulserver/src/main/java/com/ccctop/cloud/CrowdZuulMainType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding16-member-zuulserver/src/main/java/com/ccctop/cloud/filter/CrowdAccessFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding16-member-zuulserver/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding17-member-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding17-member-api/src/main/java/com/ccctop/crowd/api/MySQLRemoteService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding17-member-api/src/main/java/com/ccctop/crowd/api/RedisRemoteService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding07memberparent/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/admin-webui.war" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/atcrowdfunding08-member-eureka-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/atcrowdfunding09-member-entity-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/atcrowdfunding10-member-mysql-provider-1.0-SNAPSHOT.jar.original" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/atcrowdfunding11-member-redisserver-provider-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/atcrowdfunding12-member-authenticationserver-consumer-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/atcrowdfunding13-member-projectServer-consumer-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/atcrowdfunding14-member-order-consumer-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/atcrowdfunding15-member-payServer-consumer-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/atcrowdfunding16-member-zuulserver-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/atcrowdfunding17-member-api-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project_crowd.sql" afterDir="false" />
-    </list>
+    <list default="true" id="8511d940-7aed-44fd-a420-ebd1ae555194" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding11-member-redisserver-provider/target/" />
     <ignored path="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/target/" />
@@ -485,7 +44,20 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/src/main/java/com/ccctop/cloud/CrowdMysqlProviderMainType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="14" column="25" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -537,6 +109,7 @@
         <option value="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding13-member-projectServer-consumer/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding15-member-payServer-consumer/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding16-member-zuulserver/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/src/main/java/com/ccctop/cloud/CrowdMysqlProviderMainType.java" />
       </list>
     </option>
   </component>
@@ -588,7 +161,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -647,6 +219,56 @@
             <path>
               <item name="Funding" type="b2602c69:ProjectViewProjectNode" />
               <item name="atcrowdfunding07memberparent" type="462c0819:PsiDirectoryNode" />
+              <item name="atcrowdfunding09-member-entity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Funding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="atcrowdfunding07memberparent" type="462c0819:PsiDirectoryNode" />
+              <item name="atcrowdfunding09-member-entity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Funding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="atcrowdfunding07memberparent" type="462c0819:PsiDirectoryNode" />
+              <item name="atcrowdfunding09-member-entity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ccctop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Funding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="atcrowdfunding07memberparent" type="462c0819:PsiDirectoryNode" />
+              <item name="atcrowdfunding09-member-entity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ccctop" type="462c0819:PsiDirectoryNode" />
+              <item name="crowd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Funding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="atcrowdfunding07memberparent" type="462c0819:PsiDirectoryNode" />
+              <item name="atcrowdfunding09-member-entity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ccctop" type="462c0819:PsiDirectoryNode" />
+              <item name="crowd" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Funding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="atcrowdfunding07memberparent" type="462c0819:PsiDirectoryNode" />
               <item name="atcrowdfunding10-member-mysql-provider" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -661,6 +283,56 @@
               <item name="atcrowdfunding10-member-mysql-provider" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Funding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="atcrowdfunding07memberparent" type="462c0819:PsiDirectoryNode" />
+              <item name="atcrowdfunding10-member-mysql-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Funding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="atcrowdfunding07memberparent" type="462c0819:PsiDirectoryNode" />
+              <item name="atcrowdfunding10-member-mysql-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Funding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="atcrowdfunding07memberparent" type="462c0819:PsiDirectoryNode" />
+              <item name="atcrowdfunding10-member-mysql-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ccctop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Funding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="atcrowdfunding07memberparent" type="462c0819:PsiDirectoryNode" />
+              <item name="atcrowdfunding10-member-mysql-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ccctop" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Funding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="atcrowdfunding07memberparent" type="462c0819:PsiDirectoryNode" />
+              <item name="atcrowdfunding10-member-mysql-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ccctop" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Funding" type="b2602c69:ProjectViewProjectNode" />
@@ -669,6 +341,25 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Funding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="atcrowdfunding07memberparent" type="462c0819:PsiDirectoryNode" />
+              <item name="atcrowdfunding10-member-mysql-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Funding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="atcrowdfunding07memberparent" type="462c0819:PsiDirectoryNode" />
+              <item name="atcrowdfunding10-member-mysql-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Funding" type="b2602c69:ProjectViewProjectNode" />
@@ -872,6 +563,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -1073,11 +765,14 @@
       <workItem from="1591579565747" duration="7113000" />
       <workItem from="1591597183073" duration="1088000" />
       <workItem from="1591598890851" duration="34000" />
+      <workItem from="1591623406064" duration="84000" />
+      <workItem from="1591699907108" duration="4000" />
+      <workItem from="1591752520267" duration="68000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21866000" />
+    <option name="totallyTimeSpent" value="22022000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1090,8 +785,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22867803" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2368" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -1118,36 +814,17 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Maven" order="5" visible="true" weight="0.21801706" />
+      <window_info anchor="right" id="Maven" order="5" visible="true" weight="0.2176" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="SciView" order="7" />
+      <window_info anchor="right" id="Codota" order="8" />
+      <window_info anchor="right" id="Key Promoter X" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding05commonutils/src/main/java/com/ccctop/crowd/constant/CrowdConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding05commonutils/src/main/java/com/ccctop/crowd/exception/AccessForbiddenException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atcrowdfunding05commonutils/src/main/java/com/ccctop/crowd/exception/LoginAcctAlreadyInUseException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/atcrowdfunding05commonutils/src/main/java/com/ccctop/crowd/exception/LoginAcctAlreadyInUseForUpdateException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -1449,6 +1126,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="502">
           <caret line="34" column="20" lean-forward="true" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/src/main/java/com/ccctop/cloud/mapper/OrderPOMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/src/main/java/com/ccctop/cloud/mapper/OrderMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atcrowdfunding07memberparent/atcrowdfunding10-member-mysql-provider/src/main/java/com/ccctop/cloud/CrowdMysqlProviderMainType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
