@@ -20,8 +20,8 @@ eureka:
       defaultZone: http://localhost:1000/eureka
 aliyun:
   oss:
-    access-key-id: LTAI4G3SBTcFnj2FGxU2MnJVx
-    access-key-secret: Au7Jvt4vJqk6aHcDm3Z3Xzw2ChOcYHx
-    bucket-domain: http://ccctop-first.oss-cn-chengdu.aliyuncs.comx
-    bucket-name: ccctop-firstx
-    end-point: http://oss-cn-chengdu.aliyuncs.comx
+    access-key-id: 
+    access-key-secret: 
+    bucket-domain: 
+    bucket-name: 
+    end-point:
