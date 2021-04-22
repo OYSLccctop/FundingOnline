@@ -11,7 +11,7 @@
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
-            <version>3.2.8</version>
+            <version>3.5.6</version>
         </dependency>
     </dependencies>
     <!-- 控制 Maven 在构建过程中相关配置 -->
