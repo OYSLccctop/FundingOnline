@@ -18,7 +18,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- 声明属性， 对 Spring 的版本进行统一管理 -->
-        <atguigu.spring.version>4.3.20.RELEASE</atguigu.spring.version>
+        <atguigu.spring.version>5.3.18</atguigu.spring.version>
         <!-- 声明属性， 对 SpringSecurity 的版本进行统一管理 -->
         <atguigu.spring.security.version>4.2.10.RELEASE</atguigu.spring.security.version>
         <kotlin.version>1.3.72</kotlin.version>
