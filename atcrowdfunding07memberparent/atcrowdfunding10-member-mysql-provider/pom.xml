@@ -47,7 +47,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.8</version>
+            <version>8.0.28</version>
         </dependency>
         <dependency>
             <groupId>com.ccctop</groupId>
@@ -77,7 +77,7 @@
                     <dependency>
                         <groupId>mysql</groupId>
                         <artifactId>mysql-connector-java</artifactId>
-                        <version>5.1.8</version>
+                        <version>8.0.28</version>
                     </dependency>
                     <!-- 数据库连接池 -->
                     <dependency>
